@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>daegeolko.github.io</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .profile-container {
+      display: flex;
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #111;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .profile-box {
+      width: 300px;
+      background-color: #222;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      text-align: left;
+      margin-right: 2rem;
+      flex-shrink: 0;
+      height: auto;
+      position: relative;
+    }
+
+    .profile-box-fixed {
+      height: 400px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .profile-img {
+      width: 200px; 
+      height: auto; 
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      align-self: center; 
+    }
+
+    .profile-box a {
+      color: #589f;
+      text-decoration: none;
+    }
+
+    .profile-box a:hover {
+      color: #58af;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .custom-link {
+      color: #589f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .custom-link:hover {
+      color: #580f;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="profile-container">
+
+      <div class="profile-box profile-box-fixed">
+        <img src="image.jpg" alt="Profile Picture" class="profile-img">
+        <ul>
+          <p><strong>Daegeol Ko</strong></p>
+          <p><strong><a href="mailto:kjs4753@g.skku.edu" class="custom-link" >kjs4753@g.skku.edu</a></strong></p>
+          <p><strong><a href="https://github.com/DaegeolKo" target="_blank" class="custom-link" >Github</a></strong></p>
+        </ul>
+      </div>
+
+
+      <div class="content">
+        <section id="about">
+          <h2>About Me</h2>
+          <p>I am a MS-PhD combined course student in Intelligent Robotics at Sungkyunkwan Univ.</p>
+          <p>My professor is <a href="https://bogus2000.github.io/" class="custom-link">Hyeonwoo Yu</a> in Lab <a href="https://lair.skku.edu/home" class="custom-link">LAIR</a>.</p>
+        </section>
+
+        <section id="research">
+          <h2>Research Interests</h2>
+          <ul>
+            <li>Reinforcement Learning</li>
+            <li>Recognition of Robot</li>
+            <li>Control of Robot</li>
+          </ul>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <ul>
+            <li> - 2025.03 ~ Present : M.S. & Ph.D. in School of Intelligent Robotics at Sungkyunkwan University (SKKU)</li>
+            <li> - 2019.03 ~ 2025.02 : B.S. major in School of Computer Science at Ulsan National Institute of Science and Technology (UNIST)</li>
+          </ul>
+        </section>
+
+        <section id="experience">
+          <h2>Experience</h2>
+          <ul>
+            <li>2024.03 ~ 2025.02 : Research Intern at Lab LAIR (SKKU)</li>
+            <li>2023.01 ~ 2024.02 : Research Intern at Lab LAIR (UNIST)</li>
+          </ul>
+        </section>
+
+        <section id="awards">
+          <h2>Awards and Honors</h2>
+          <ul>
+            <li>3rd Place Award , The 3rd F1Tenth Korea Championship, The International Conference on Control, Automation, and Systems (ICCAS) (2024)</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
