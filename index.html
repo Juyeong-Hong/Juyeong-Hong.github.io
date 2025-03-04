@@ -6,11 +6,18 @@
   <title>juyeong-hong.github.io</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --background-color: #000;
+      --text-color: #fff;
+      --link-color: #589f;
+      --link-hover-color: #58af;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      background-color: #000;
-      color: #fff;
+      background-color: var(--background-color);
+      color: var(--text-color);
       font-family: "Montserrat", sans-serif;
       line-height: 1.6;
       display: flex;
@@ -61,12 +68,12 @@
     }
 
     .profile-box a {
-      color: #589f;
+      color: var(--link-color);
       text-decoration: none;
     }
 
     .profile-box a:hover {
-      color: #58af;
+      color: var(--link-hover-color);
     }
 
     .content {
@@ -93,17 +100,35 @@
     }
 
     .custom-link {
-      color: #589f;
+      color: var(--link-color);
       text-decoration: none;
       font-weight: bold;
     }
 
     .custom-link:hover {
-      color: #580f;
+      color: var(--link-hover-color);
+    }
+
+    .toggle-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .toggle-button:hover {
+      background-color: #555;
     }
   </style>
 </head>
 <body>
+  <button class="toggle-button" onclick="toggleMode()">Toggle Mode</button>
   <main>
     <div class="profile-container">
 
@@ -116,7 +141,6 @@
           <p><strong><a href="CV.pdf" target="_blank" class="custom-link">CV</a></strong></p>
         </ul>
       </div>
-
 
       <div class="content">
         <section id="about">
@@ -159,5 +183,17 @@
       </div>
     </div>
   </main>
+  <script>
+    function toggleMode() {
+      const root = document.documentElement;
+      const isDarkMode = root.style.getPropertyValue('--background-color') === '#000';
+
+      root.style.setProperty('--background-color', isDarkMode ? '#fff' : '#000');
+      root.style.setProperty('--text-color', isDarkMode ? '#000' : '#fff');
+      root.style.setProperty('--link-color', isDarkMode ? '#007acc' : '#589f');
+      root.style.setProperty('--link-hover-color', isDarkMode ? '#005f99' : '#58af');
+    }
+  </script>
 </body>
 </html>
+
