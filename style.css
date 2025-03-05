@@ -1,0 +1,102 @@
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .profile-container {
+      display: flex;
+      flex-wrap: wrap; /* 모바일에서 칸이 아래로 내려가도록 설정 */
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #111;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .profile-box {
+      width: 100%; /* 모바일에서는 전체 너비를 차지 */
+      max-width: 300px; /* 기본 데스크탑 설정 */
+      background-color: #222;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      text-align: center; /* 가운데 정렬 */
+      margin: 0 auto 2rem auto; /* 모바일에서 아래 마진 추가 */
+      flex-shrink: 0;
+      height: auto;
+    }
+
+    .profile-img {
+      width: 150px; /* 모바일에서 크기 축소 */
+      height: auto; 
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .content {
+      flex: 1;
+      width: 100%; /* 모바일에서 너비 조정 */
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .custom-link {
+      color: #589f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .custom-link:hover {
+      color: #580f;
+    }
+
+    @media (max-width: 768px) {
+      .profile-container {
+        flex-direction: column; /* 모바일에서는 세로 배치 */
+        align-items: center; /* 가운데 정렬 */
+        padding: 1rem;
+      }
+
+      .profile-box {
+        width: 100%; /* 모바일에서 전체 너비 */
+        margin-bottom: 1rem;
+      }
+
+      .content {
+        width: 100%;
+      }
+
+      section h2 {
+        font-size: 1.5rem; /* 모바일에서 글자 크기 축소 */
+      }
+    }
+</style>
